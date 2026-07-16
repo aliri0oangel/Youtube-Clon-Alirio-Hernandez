@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --text-color: white;
+  --text-weight: 700;
+  --text-element-size: 14px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MODIFICADORES REUTILIZABLES */
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+
+header > nav {
+  background-color: #000000;
+  padding: 0px 16px;
+  height: 60px;
+}
+
+.logo--section{
+  width: 170px;
+  align-items: center;
+  height: 100%;
+}
+
+.logo__container{
+  height: 75%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon > img {
+  width: 30px;
+  height: 30px;
+}
+
+.logo-icon {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  gap: 1px;
+}
+
+.logo-content {
+  color: white;
+  display: flex;
+  padding: 0 0 5px 12px ;
+}
+
+nav {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.btn-menu {
+  background-color: #000000;
+  border: none;
+  border-radius: 50%;
+  padding: 0 11px 5px 8px;
+  font-size: 18px;
+}
+
+.btn-menu > i {
+  color: white;
+}
+
+/* segundo elemento */
+.nav--flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__element {
+  width: 54%;
+  height: 75%;
+}
+.nav__element > .row {
+  width: 100%;
+  height: 100%;
+}
+.nav__element > .row > div {
+  width: 100%;
+  height: 100%;
+}
+
+.nav__element > .row > button {
+  height: 95%;
+  width: 11%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px solid #3a3a3a;
+  background-color: #28292a;
+  color: white;
+  cursor: pointer;
+  margin-left: 60px;
+}
+.nav__search-icon {
+  fill: white;
+  pointer-events: none;
+  display: inherit;
+  width: 63%;
+  height: 64%;
+  padding-left: 9px;
+}
+.nav__search {
+  width: 97%;
+  height: 85%;
+  border: 1px solid #3a3a3a;
+  background-color: black;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-left: 15px;  
+  font-size: 17px;
+  font-weight: 500;
+  margin-left: 57px;
+  color: white;
+}
+
+.nav__btn {
+  background-color: #28292a;
+  border: none;
+  border-radius: 50%;
+  width: 46px;
+  height: 95%;
+  margin-left: 16px;
+}
+
+.nav__mic-btn {
+  pointer-events: none;
+  display: inherit;
+  width: 100%;
+  height: 58%;
+  fill: white;
+}
+
+/* 3er elemento */
+.end-section {
+  height: 100%;
+  width: 214px;
+  display: flex;
+  align-items: center;
+}
+.section__element {
+  height: 75%;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+.create-button {
+  color: white;
+  background-color: #474849a6;
+  width: 90px;
+  height: 90%;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 100px;
+  font-weight: var(--text-weight);
+  font-size: var(--text-element-size);
+}
+.create-button__icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: white;
+}
+
+.section__bell-icon {
+  pointer-events: none;
+  display: inherit;
+  width: 100%;
+  height: 58%;
+  fill: white;
+}
+
+.section__bell{
+  background-color: black;
+  border: none;  
+}
+
+.section__user{
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #474849a6 ;  
+  border-radius: 50px ;
+  color: white;
+}
+
