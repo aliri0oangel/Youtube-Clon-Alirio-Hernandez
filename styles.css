@@ -2,8 +2,12 @@
 
 :root {
   --text-color: white;
-  --text-weight: 700;
+  --text-weight: 600;
   --text-element-size: 14px;
+  --background-black: #111111;
+  --font-roboto:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 * {
@@ -27,8 +31,8 @@
 /* HEADER */
 
 header > nav {
-  background-color: #000000;
-  padding: 8px 16px;
+  background-color: #111111;
+  padding: 10px 24px;
 }
 
 .logo--section {
@@ -38,7 +42,7 @@ header > nav {
 .logo__container {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 22px;
 }
 
 .logo-icon > img {
@@ -56,6 +60,14 @@ header > nav {
 .logo-content {
   color: white;
   display: flex;
+}
+
+.logo-ubicacion{
+  font-size: 10px;
+  font-weight: 300;
+  color: rgb(211, 208, 208);
+  position: relative;
+  padding: 0 0 18px 6px;
 }
 
 nav {
@@ -189,3 +201,84 @@ nav {
   justify-content: center;
   align-items: center;
 }
+
+/* main section */
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 5% 95%;
+  height: 100vh;
+  padding-left: 2px;
+}
+.bgc {
+  background-color: var(--background-black);
+}
+.main__element {
+  border: 2px dotted pink;
+}
+.grid__side-menu {  
+  padding: 0px 3px;
+}
+.btn__menu {
+  align-items: center;
+  padding: 14px 0 14px;
+  fill: white;
+  border: none;
+}
+.btn-label {
+  color: var(--text-color);
+  font-size: 10px;
+  padding-top: 8px;
+}
+.category_section{
+  padding: 14px 26px;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.category_element {
+  background-color: #272727;
+  color: var(--text-color);
+  font-weight: var(--text-weight);
+  font-family: var(--font-roboto);
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.element_active{
+  background-color: white;
+  color: black;
+}
+
+.category_arrow{
+border: 1px solid yellowgreen;
+padding: 0px 2px;
+border-radius: 60%;
+}
+
+.grid__videos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;  
+  padding: 18px 24px;
+}
+.video_element{  
+  border-radius: 8px;
+  color: white;
+  width: 100%;
+  max-width: 420px;
+  
+}
+.video__img{
+  width: 100%;  
+  height: 220px;  
+  object-fit: fill;
+  border-radius: 8px;
+
+}
+
+
+
